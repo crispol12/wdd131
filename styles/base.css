@@ -13,17 +13,17 @@ body {
 h2 {
     font-family: 'Open Sans', sans-serif;  
     font-size: 22px;
-    color: #004f85;
+    color: #003366;  /* Ajuste del color para mejor contraste */
 }
 
 header h1 {
     font-family: 'Open Sans', sans-serif;  
     margin: 0;
     font-size: 24px;
-    color: aliceblue;
+    color: #ffffff;  /* Cambiado a blanco puro para mejor contraste */
     display: flex;
     justify-content: center;
-   
+    
 }
 
 nav ul {
@@ -106,7 +106,7 @@ ul li {
 }
 
 ul li a {
-    color: #004f85;
+    color: #003366;  /* Cambiado a azul más oscuro para mayor contraste */
     text-decoration: none;
 }
 
@@ -134,10 +134,10 @@ footer p {
 }
 
 #lastModified {
-    color: yellow; 
+    color: white;  /* Cambiado a blanco para mejor contraste */
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     main {
       flex-direction: column;
@@ -151,11 +151,11 @@ footer p {
 
 
 .highlight-name {
-    color: yellow; 
+    color: #ffcc00;  /* Amarillo más oscuro */
 }
 
 .about h2, .resources h2 {
-    background-color: blue; 
+    background-color: #003366;  /* Fondo azul oscuro para mejorar contraste */
     color: white;           
     padding: 10px;         
     border-radius: 5px; 
