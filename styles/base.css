@@ -42,8 +42,8 @@ body {
   nav ul li a:hover {
     text-decoration: underline;
   }
+
   
-  /* Main Content */
   main {
     flex: 1;
     display: flex;
