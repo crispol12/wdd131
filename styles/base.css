@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;  /* Aplicamos Google Font 'Roboto' */
+    font-family: 'Roboto', sans-serif;  
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #4848f7;
     color: #333;
     min-height: 100vh;
     display: flex;
@@ -11,15 +11,19 @@ body {
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;  /* Aplicamos Google Font 'Open Sans' para los títulos */
+    font-family: 'Open Sans', sans-serif;  
     font-size: 22px;
     color: #004f85;
 }
 
 header h1 {
-    font-family: 'Open Sans', sans-serif;  /* Aplica Google Font 'Open Sans' para el título */
+    font-family: 'Open Sans', sans-serif;  
     margin: 0;
     font-size: 24px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+   
 }
 
 nav ul {
@@ -145,7 +149,7 @@ footer p {
     }
 }
 
-/* Additional Styles */
+
 .highlight-name {
     color: yellow; 
 }
