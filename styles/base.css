@@ -1,6 +1,6 @@
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;  /* Aplicamos Google Font 'Roboto' */
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -8,83 +8,77 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  header {
-    background-color: #004f85; 
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  header h1 {
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;  /* Aplicamos Google Font 'Open Sans' para los títulos */
+    font-size: 22px;
+    color: #004f85;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;  /* Aplica Google Font 'Open Sans' para el título */
     margin: 0;
     font-size: 24px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin: 0 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
+}
 
-  
-  main {
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
     flex: 1;
     display: flex;
     justify-content: space-between;
     margin: 20px;
-  }
-  
-  .card {
+}
+
+.card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 47%; 
-  }
-  
-  h2 {
-    font-size: 22px;
-    color: #004f85;
-  }
-  
-  .profile-content {
+}
+
+.profile-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-  }
-  
-  .profile-image {
+.profile-image {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 5px; 
 }
 
-  .additional-image-content {
+.additional-image-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .additional-image {
+}
+
+.additional-image {
     width: 250px;
     height: 200px;
     object-fit: cover; 
@@ -92,32 +86,32 @@ body {
     margin-right: 15px; 
     display: inline-block; 
     vertical-align: top; 
-  }
+}
 
-  .about p {
+.about p {
     line-height: 1.6;
-  }
-  
-  ul {
+}
+
+ul {
     padding: 0;
     list-style-type: none;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin-bottom: 10px;
-  }
-  
-  ul li a {
+}
+
+ul li a {
     color: #004f85;
     text-decoration: none;
-  }
-  
-  ul li a:hover {
+}
+
+ul li a:hover {
     text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #004f85;
     color: white;
     text-align: center;
@@ -125,34 +119,40 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-  }
-  
-  #currentyear {
+}
+
+#currentyear {
     font-weight: bold;
-  }
-  #lastModified {
+}
+
+#lastModified {
     color: yellow; 
-  }
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     main {
       flex-direction: column;
     }
-  
+
     .card {
       width: 100%;
       margin-bottom: 20px;
     }
-  }
-  .highlight-name {
+}
+
+/* Additional Styles */
+.highlight-name {
     color: yellow; 
-  }
-  .about h2, .resources h2 {
+}
+
+.about h2, .resources h2 {
     background-color: blue; 
     color: white;           
     padding: 10px;         
     border-radius: 5px; 
-  }
+}
