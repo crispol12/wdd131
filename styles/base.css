@@ -74,10 +74,10 @@ body {
   .profile-image {
     width: 250px;
     height: 250px;
-    object-fit: cover; /
+    object-fit: cover;
     border-radius: 5px; 
-  }
-  
+}
+
   .additional-image-content {
     display: flex;
     justify-content: space-between;
