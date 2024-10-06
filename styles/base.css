@@ -137,7 +137,7 @@ footer p {
     color: white;  /* Cambiado a blanco para mejor contraste */
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     main {
       flex-direction: column;
@@ -151,11 +151,11 @@ footer p {
 
 
 .highlight-name {
-    color: #ffcc00;  /* Amarillo más oscuro */
+    color: #ffcc00;  
 }
 
 .about h2, .resources h2 {
-    background-color: #003366;  /* Fondo azul oscuro para mejorar contraste */
+    background-color: #003366;  
     color: white;           
     padding: 10px;         
     border-radius: 5px; 
