@@ -13,7 +13,7 @@ header.hero img {
 
 /* Estilo para el título (centrado en la imagen) */
 header.hero h1 {
-    
+
     position: absolute;
     top: 20px;
     left: 20px;
@@ -50,7 +50,7 @@ header.hero h1 {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    background-color: rgba(46, 24, 245, 0.7); /* Fondo oscuro semitransparente */
     color: white;
     text-align: center;
     padding: 10px 0;
