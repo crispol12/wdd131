@@ -1,9 +1,7 @@
-/* Variables globales */
+
 :root {
-    --primary-color: #FFD100; /* Amarillo bandera de Ecuador */
-    --secondary-color: #0033A0; /* Azul bandera de Ecuador */
-    --accent-color: #FF0000; /* Rojo bandera de Ecuador */
-    --text-color: #333;
+    --primary-color: #FFD100; 
+    --secondary-color: #0033A0; 
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Merriweather', serif;
 }
@@ -36,7 +34,7 @@ header.hero img {
 
 .data-weather {
     display: flex;
-    flex-direction: column; /* Cambiar a una columna para vista móvil */
+    flex-direction: column; 
     justify-content: space-around;
     margin: 20px auto;
     padding: 20px;
@@ -44,12 +42,12 @@ header.hero img {
 }
 
 .data, .weather {
-    width: 100%; /* Cambia el ancho al 100% en lugar de 45% para móvil */
+    width: 100%; 
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Espaciado entre las secciones */
+    margin-bottom: 20px; 
 }
 
 .data h2, .weather h2 {
@@ -80,14 +78,14 @@ footer p {
     margin: 0;
 }
 
-/* Media query para ajustar la vista a dispositivos móviles más pequeños */
+
 @media (max-width: 600px) {
     header.hero h1 {
-        font-size: 1.5em; /* Tamaño más pequeño en pantallas móviles */
+        font-size: 1.5em; 
     }
 
     header.hero img {
-        height: 150px; /* Ajusta la altura de la imagen en la vista móvil */
+        height: 150px; 
     }
 
     .data-weather {
