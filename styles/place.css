@@ -1,0 +1,104 @@
+/* Variables globales */
+:root {
+    --primary-color: #FFD100; /* Amarillo bandera de Ecuador */
+    --secondary-color: #0033A0; /* Azul bandera de Ecuador */
+    --accent-color: #FF0000; /* Rojo bandera de Ecuador */
+    --text-color: #333;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: var(--text-color);
+}
+
+header.hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header.hero h1 {
+    font-family: var(--font-secondary);
+    font-size: 2em;
+}
+
+header.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.data-weather {
+    display: flex;
+    flex-direction: column; /* Cambiar a una columna para vista móvil */
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.data, .weather {
+    width: 100%; /* Cambia el ancho al 100% en lugar de 45% para móvil */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaciado entre las secciones */
+}
+
+.data h2, .weather h2 {
+    font-family: var(--font-secondary);
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--font-primary);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media query para ajustar la vista a dispositivos móviles más pequeños */
+@media (max-width: 600px) {
+    header.hero h1 {
+        font-size: 1.5em; /* Tamaño más pequeño en pantallas móviles */
+    }
+
+    header.hero img {
+        height: 150px; /* Ajusta la altura de la imagen en la vista móvil */
+    }
+
+    .data-weather {
+        padding: 10px;
+    }
+
+    .data, .weather {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

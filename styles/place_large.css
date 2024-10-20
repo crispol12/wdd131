@@ -1,0 +1,115 @@
+/* Variables globales */
+:root {
+    --primary-color: #FFD100;
+    --secondary-color: #0033A0;
+    --accent-color: #FF0000;
+    --text-color: #fff;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+}
+
+header.hero {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh; /* La imagen ocupa toda la pantalla */
+}
+
+header.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Imagen ajustada a toda la pantalla */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Imagen de fondo */
+}
+
+header.hero h1 {
+    font-family: var(--font-secondary);
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    color: var(--text-color);
+    z-index: 2; /* Texto visible sobre la imagen */
+}
+
+/* Secciones de datos y clima flotantes */
+.data-weather {
+    position: relative;
+    width: 100%;
+    height: 100%; /* La altura sigue siendo el 100% de la pantalla */
+}
+
+.data, .weather {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    color: var(--text-color); /* Texto blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra visible */
+    z-index: 3; /* Para que esté visible sobre la imagen */
+}
+
+.data {
+    top: 20px;
+    left: 20px;
+    width: 250px; /* Ajusta el tamaño del cuadro de datos */
+}
+
+.weather {
+    bottom: 20px;
+    right: 20px;
+    width: 250px; /* Ajusta el tamaño del cuadro de clima */
+}
+
+.data h2, .weather h2 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color); /* Título de color amarillo */
+    margin-bottom: 10px;
+}
+
+.data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color); /* Texto blanco */
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--font-primary);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3; /* Aseguramos que el footer esté visible sobre la imagen */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    header.hero h1 {
+        font-size: 4em; /* Título más grande en pantallas grandes */
+    }
+
+    .data, .weather {
+        width: 300px; /* Tamaño más grande para pantallas grandes */
+        padding: 25px;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuador</title>
+
+    <!-- Enlace a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a la hoja de estilos -->
+   
+    <link rel="stylesheet" href="styles/place_large.css" media="screen and (min-width: 1024px)"> <!-- Estilos para pantallas grandes -->
+    <link rel="stylesheet" href="styles/place.css"> <!-- Estilos para móviles -->
+    <!-- Enlace al archivo JavaScript -->
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <h1>Ecuador</h1>
+        <img src="Images/ecuador.webp" alt="Imagen de Ecuador">
+    </header>
+
+    <section class="data-weather">
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 283,561 km²</li>
+                <li><strong>Población:</strong> 17.64 millones</li>
+                <li><strong>Capital:</strong> Quito</li>
+                <li><strong>Idioma:</strong> Español, Quichua</li>
+                <li><strong>Moneda:</strong> Dólar estadounidense (USD)</li>
+                <li><strong>Zona Horaria:</strong> UTC-5 (continental)</li>
+                <li><strong>Código de llamada:</strong> +593</li>
+                <li><strong>Internet TLD:</strong> .ec</li>
+            </ul>
+        </div>
+
+        <div class="weather">
+            <h2>Weather ⛅</h2>
+            <p><strong>Temperature:</strong> 20°C</p>
+            <p><strong>Conditions:</strong> Mostly Cloudy</p>
+            <p><strong>Wind:</strong> 10 km/h</p>
+            <p><strong>Windchill:</strong> <span id="windchill">N/A</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>©2024 Tu Nombre - Ecuador</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
