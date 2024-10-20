@@ -1,4 +1,14 @@
 /* Estilos para pantallas grandes */
+:root {
+    --primary-color: #FFD100; /* Amarillo bandera de Ecuador */
+    --secondary-color: #0033A0; /* Azul bandera de Ecuador */
+    --accent-color: #FF0000; /* Rojo para títulos de datos y clima */
+    --text-color: #333; /* Color de texto principal */
+    --background-light: #f0f0f0;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
 header.hero {
     position: relative;
     height: 100vh; /* La imagen ocupa toda la pantalla */
@@ -51,7 +61,7 @@ header.hero h1 {
 
 footer {
     background-color: rgba(46, 24, 245, 0.7); /* Fondo oscuro semitransparente */
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
     padding: 10px 0;
     font-family: var(--font-primary);
