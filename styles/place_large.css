@@ -7,51 +7,69 @@ header.hero {
 header.hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
+    object-fit: cover; /* La imagen cubre toda el área sin deformarse */
+    position: relative;
 }
 
+/* Estilo para el título (centrado en la imagen) */
 header.hero h1 {
-
+    
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
     font-size: 3em;
-    z-index: 2; /* Asegura que el título esté encima de la imagen */
+    z-index: 2; /* Asegura que el título esté sobre la imagen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra para mejor contraste */
 }
 
-/* Cuadros flotantes para datos y clima */
+/* Cuadros flotantes de datos y clima */
 .data, .weather {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mayor contraste */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente oscuro para contraste */
     color: white;
     padding: 20px;
     border-radius: 8px;
-    z-index: 3; /* Asegura que los cuadros estén encima de la imagen */
-    width: 300px; /* Ajusta el ancho de los cuadros */
+    z-index: 3; /* Asegura que los cuadros estén sobre la imagen */
+    width: 280px; /* Ajusta el ancho de los cuadros */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Añade sombra a los cuadros para dar sensación de "flotante" */
 }
 
-/* Posicionamiento del cuadro de datos */
+/* Cuadro de datos flotante (esquina inferior izquierda) */
 .data {
-    top: 20px; /* Posición en la esquina superior izquierda */
-    left: 20px;
-
+    bottom: 30px; /* Separación del borde inferior */
+    left: 30px; /* Separación del borde izquierdo */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
-/* Posicionamiento del cuadro del clima */
+/* Cuadro de clima flotante (esquina superior derecha) */
 .weather {
-
-    bottom: 20px; /* Posición en la esquina inferior derecha */
-    right: 20px;
-    }
+    top: 30px; /* Separación del borde superior */
+    right: 30px; /* Separación del borde derecho */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mayor contraste */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
     color: white;
     text-align: center;
     padding: 10px 0;
     font-family: var(--font-primary);
-    margin-top: 0; /* Ajuste para que el pie de página no interfiera */
-    z-index: 3; /* Asegura que el footer esté sobre la imagen */
+    position: relative;
+    z-index: 4; /* Asegura que el footer esté sobre la imagen */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajustes adicionales para asegurar el contraste */
+@media (min-width: 1024px) {
+    .data, .weather {
+        font-size: 1.2em; /* Ajusta el tamaño del texto para pantallas grandes */
+    }
+
+    header.hero h1 {
+        font-size: 3.5em; /* Ajusta el tamaño del título */
+    }
 }
