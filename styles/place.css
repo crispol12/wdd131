@@ -1,4 +1,3 @@
-
 /* Variables globales */
 :root {
     --primary-color: #FFD100; /* Amarillo bandera de Ecuador */
@@ -16,6 +15,15 @@ body {
     padding: 0;
     background-color: var(--background-light); /* Fondo claro */
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido en la pantalla */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo en pantallas pequeñas */
+    padding: 0;
 }
 
 /* Estilo del header e imagen en vista móvil */
@@ -29,8 +37,7 @@ header.hero img {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
-    display: block;
-    margin: 0 auto; /* Centrar la imagen */
+    
 }
 
 header.hero h1 {
@@ -48,6 +55,8 @@ header.hero h1 {
     align-items: center; /* Centrar cuadros y textos */
     padding: 15px;
     width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin-top: 10px;
 }
 
 .data, .weather {
@@ -79,14 +88,17 @@ header.hero h1 {
     font-size: 1.2em;
 }
 
-/* Estilo del pie de página en móvil */
+/* Estilo del pie de página */
 footer {
     background-color: var(--secondary-color); /* Azul */
     color: white;
     text-align: center;
     padding: 10px 0;
     font-family: var(--font-primary);
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho del pie de página */
     margin-top: 20px;
+    border-radius: 0 0 12px 12px; /* Bordes redondeados solo abajo */
 }
 
 footer p {
