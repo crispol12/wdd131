@@ -3,7 +3,7 @@
     --primary-color: #FFD100; /* Amarillo bandera de Ecuador */
     --secondary-color: #0033A0; /* Azul bandera de Ecuador */
     --accent-color: #FF0000; /* Rojo para títulos de datos y clima */
-    --text-color: #333; /* Color de texto principal */
+    --text-color: #1c1e6e; /* Color de texto principal */
     --background-light: #f0f0f0;
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Merriweather', serif;
@@ -37,7 +37,7 @@ header.hero img {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
-    
+
 }
 
 header.hero h1 {
@@ -61,7 +61,7 @@ header.hero h1 {
 
 .data, .weather {
     width: 90%; /* Para dejar un margen alrededor de los cuadros */
-    background-color: white;
+    background-color: rgb(247, 243, 193);
     border-radius: 12px; /* Bordes redondeados */
     padding: 15px;
     margin: 10px 0;
