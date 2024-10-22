@@ -67,20 +67,20 @@ header.hero h1 {
 }
 
 .weather img {
-    width: 150px;
+    width: 100px;
     height: auto;
     max-width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .weather img {
-        width: 100px;
+        width: 80px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .weather img {
-        width: 80px;
+        width: 60px;
     }
 }
 
