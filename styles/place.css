@@ -87,7 +87,30 @@ header.hero h1 {
     margin: 10px 0;
     font-size: 1.2em;
 }
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.weather img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .weather img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather img {
+        width: 80px;
+    }
+}
 /* Estilo del pie de página */
 footer {
     background-color: var(--secondary-color); /* Azul */
