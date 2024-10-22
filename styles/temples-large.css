@@ -1,0 +1,85 @@
+/* temples-large.css para pantallas grandes */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Alinear el contenido principal en el centro */
+main {
+    max-width: 1200px; /* Ancho máximo de la sección principal */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px;
+}
+
+/* Estilos del encabezado para pantallas grandes */
+header {
+    background-color: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaciado entre los enlaces */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Efecto hover en los enlaces del menú */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las imágenes en formato grid */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Imágenes y captions */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #4b0082;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
