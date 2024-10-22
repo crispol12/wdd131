@@ -95,20 +95,20 @@ header.hero h1 {
 }
 
 .weather img {
-    width: 100px;
+    width: 80px;
     height: auto;
     max-width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .weather img {
-        width: 80px;
+        width: 60px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .weather img {
-        width: 60px;
+        width: 40px;
     }
 }
 /* Estilo del pie de página */

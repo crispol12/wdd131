@@ -25,8 +25,8 @@ header.hero img {
 header.hero h1 {
 
     position: absolute;
-    top: 80px;
-    left: 400px;
+    top: 100px;
+    left: 450px;
     color: rgb(252, 231, 231);
     font-size: 3em;
     z-index: 2; /* Asegura que el título esté sobre la imagen */
@@ -67,20 +67,20 @@ header.hero h1 {
 }
 
 .weather img {
-    width: 100px;
+    width: 80px;
     height: auto;
     max-width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .weather img {
-        width: 80px;
+        width: 60px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .weather img {
-        width: 60px;
+        width: 40px;
     }
 }
 
