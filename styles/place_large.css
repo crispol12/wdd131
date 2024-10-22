@@ -59,6 +59,31 @@ header.hero h1 {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .weather img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather img {
+        width: 80px;
+    }
+}
+
 footer {
     background-color: var(--secondary-color); /* Fondo oscuro semitransparente */
     color: white;
