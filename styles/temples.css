@@ -1,0 +1,106 @@
+/* Estilos básicos y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif; /* Ejemplo de fuente de Google */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Cambia este color según tu esquema */
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Cabecera y navegación (Flexbox) */
+header {
+    background-color: #007ACC; /* Cambia según tu esquema de colores */
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #005f9e; /* Efecto hover */
+}
+
+/* Estructura principal */
+main {
+    margin-top: 20px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007ACC;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Ocultar el menú al usar el botón hamburguesa en dispositivos móviles */
+.hamburger {
+    display: none;
+}
+
+/* Hamburguesa visible en móviles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+}
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: #007ACC;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
+
