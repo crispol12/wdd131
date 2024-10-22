@@ -1,5 +1,4 @@
-/* temples-large.css para pantallas grandes */
-
+/* Estilos generales para pantallas grandes */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -22,11 +21,14 @@ header {
     padding: 20px 0;
 }
 
+/* Navegación en horizontal, distribuyendo los elementos del menú */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distribuye uniformemente los enlaces */
+    align-items: center; /* Centra verticalmente los enlaces */
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -45,15 +47,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para las imágenes en formato grid */
+/* Estilos para las imágenes en formato grid con 3 columnas */
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 20px;
     margin-top: 20px;
 }
 
-/* Imágenes y captions */
+/* Asegurarse de que las imágenes y captions estén alineadas */
 figure {
     display: flex;
     flex-direction: column;
@@ -82,4 +84,29 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    /* Para pantallas más pequeñas, cambia el grid de 3 a 2 columnas */
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Para pantallas móviles, cambia a 1 columna */
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hacer el menú vertical para pantallas pequeñas */
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
