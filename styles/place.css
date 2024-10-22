@@ -101,6 +101,14 @@ footer {
     border-radius: 0 0 12px 12px; /* Bordes redondeados solo abajo */
 }
 
+footer::after {
+    content: " | Thank you for visiting!";
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+
 footer p {
     margin: 0;
 }
