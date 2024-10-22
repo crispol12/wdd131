@@ -125,11 +125,11 @@ footer {
 }
 
 footer::after {
-    content: " | Thank you for visiting!";
+    content: " | This is my country!";
     display: block;
     text-align: center;
     margin-top: 10px;
-    color: gray;
+    color: rgb(232, 32, 32);
 }
 
 footer p {
