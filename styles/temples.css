@@ -25,6 +25,9 @@ header {
     background-color: #007ACC; /* Cambia según tu esquema de colores */
     color: white;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -33,6 +36,11 @@ nav ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    display: none; /* Oculta el menú en dispositivos móviles inicialmente */
+}
+
+nav ul.show { /* Muestra el menú cuando el usuario hace clic en la hamburguesa */
+    display: flex;
 }
 
 nav a {
@@ -87,15 +95,6 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-    }
-
-    nav ul.show {
-        display: block;
-    }
-}
-    
-    .hamburger {
-        display: block;
         cursor: pointer;
         background-color: #007ACC;
         color: white;
@@ -104,3 +103,13 @@ footer {
         padding: 10px;
     }
 
+    nav ul {
+        display: none; /* Asegura que el menú esté oculto inicialmente en móviles */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.show {
+        display: flex; /* Muestra el menú cuando se activa con JavaScript */
+    }
+}
