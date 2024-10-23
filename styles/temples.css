@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Cabecera y navegación (Flexbox) */
 header {
-    background-color: #007ACC; /* Cambia según tu esquema de colores */
+    background-color: #0a7dcb; /* Cambia según tu esquema de colores */
     color: white;
     padding: 10px;
     display: flex;
@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #005f9e; /* Efecto hover */
+    background-color: #4a0bc7; /* Efecto hover */
 }
 
 /* Estructura principal */
@@ -68,8 +68,9 @@ figure {
 }
 
 figure img {
-    max-width:250 px;
-    height: 200 px; 
+    max-width:100%;
+    height:auto; 
+    aspect-ratio: 4/3;
 }
 
 figcaption {
