@@ -1,34 +1,34 @@
-
 .temple-grid {
-    display: grid;
-    gap: 20px;
-    /* Para pantallas muy pequeñas (móviles): */
-    grid-template-columns: 1fr;
-  
-    /* Para tablets (2 columnas): */
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    /* Para pantallas grandes (3 columnas): */
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    
-  }
-  @media (min-width: 1024px) {
-    nav ul {
-      display: flex; /* Ensure this is set */
-      flex-direction: row; /* Change to row for horizontal layout */
-      justify-content: space-between;
-      align-items: center;    
-  } 
-  }
+  display: grid;
+  gap: 20px;
+  /* Para pantallas muy pequeñas (móviles): */
+  grid-template-columns: 1fr;
+
+  /* Para tablets (2 columnas): */
   @media (min-width: 768px) {
-    nav ul {
-    display: flex; /* Ensure this is set */
-    flex-direction: row; /* Change to row for horizontal layout */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Para pantallas grandes (3 columnas): */
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+}
