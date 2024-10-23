@@ -70,7 +70,7 @@ figure {
 figure img {
     max-width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3; /* Ajusta la relación de aspecto según tus imágenes */
+    aspect-ratio: 4 / 3; 
 }
 
 figcaption {
