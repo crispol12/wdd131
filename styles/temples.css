@@ -69,8 +69,7 @@ figure {
 
 figure img {
     max-width:250 px;
-    height: 200 px;
-    aspect-ratio: 4 / 3; 
+    height: 200 px; 
 }
 
 figcaption {
