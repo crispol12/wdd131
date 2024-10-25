@@ -9,8 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif; /* Ejemplo de fuente de Google */
     line-height: 1.6;
-    background-color: #f4f4f4; /* Cambia este color según tu esquema */
-    color: #333;
+    background-color: #f4f4f4; /* Fondo claro, buena legibilidad */
+    color: #222; /* Color más oscuro para el texto principal */
     padding: 20px;
 }
 
@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Cabecera y navegación (Flexbox) */
 header {
-    background-color: #0a7dcb; /* Cambia según tu esquema de colores */
+    background-color: #005a9e; /* Azul más oscuro para mayor contraste */
     color: white;
     padding: 10px;
     display: flex;
@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4a0bc7; /* Efecto hover */
+    background-color: #003d66; /* Cambié a un tono de azul más oscuro para mejor contraste en hover */
 }
 
 /* Estructura principal */
@@ -68,7 +68,6 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
     padding: 20px;
     text-align: center;
-    
 }
 
 .temple-card img {
@@ -81,13 +80,13 @@ main {
 .temple-card h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: #333;
+    color: #222; /* Color más oscuro para el título */
 }
 
 .temple-card p {
     margin-bottom: 8px;
     font-size: 1rem;
-    color: #666;
+    color: #444; /* Color más oscuro para el texto */
 }
 
 /* Efecto hover para las tarjetas */
@@ -100,7 +99,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007ACC;
+    background-color: #004f8d; /* Cambié el color a uno más oscuro */
     color: white;
     margin-top: 20px;
 }
@@ -115,7 +114,7 @@ footer {
     .hamburger {
         display: block;
         cursor: pointer;
-        background-color: #007ACC;
+        background-color: #005a9e; /* Fondo del botón de hamburguesa */
         color: white;
         font-size: 24px;
         text-align: center;
