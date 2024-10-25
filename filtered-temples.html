@@ -18,27 +18,25 @@
         <div class="hamburger">☰</div>
         <nav>
             <ul>
-                <li><a href="temples.html">Home</a></li>
-                <li><a href="temples.html">Old</a></li>
-                <li><a href="temples.html">New</a></li>
-                <li><a href="temples.html">Large</a></li>
-                <li><a href="temples.html">Small</a></li>
+                <!-- Los enlaces ahora tienen `data-filter` para que JavaScript pueda usarlos para filtrar -->
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-      <div><h2>Home</h2> </div>
-        <section class="temple-grid"> 
-
-        </section>
+        <div><h2>Temple Gallery</h2></div>
+        <!-- La sección donde se generarán las tarjetas de templos -->
+        <section class="temple-grid"></section>
     </main>
 
     <footer>
-      <p>&copy; <span id="currentyear"></span> 🚵‍♀️Christian Castillo🚵‍♀️ - Otavalo/Ecuador</p>
-      <p id="lastModified"> Last Modification:</p>
-  </footer>
-
-
+        <p>&copy; <span id="currentyear"></span> 🚵‍♀️Christian Castillo🚵‍♀️ - Otavalo/Ecuador</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
 </body>
 </html>
