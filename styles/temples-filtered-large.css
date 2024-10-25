@@ -1,0 +1,29 @@
+.temple-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr; /* Para pantallas muy pequeñas (móviles) */
+}
+
+/* Para tablets (2 columnas): */
+@media (min-width: 768px) {
+  .temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Para pantallas grandes (3 columnas): */
+@media (min-width: 1024px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Estilos de navegación para pantallas de al menos 768px (tablets y superiores) */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
