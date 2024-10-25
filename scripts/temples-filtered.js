@@ -68,5 +68,12 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Anchorage Alaska",
+    location: "Anchorage, Alaska",
+    dedicated: "1999, January, 9-10",
+    area: 11937,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/400x250/anchorage-temple-lds-746769-wallpaper.jpg"
+  },
 ];
