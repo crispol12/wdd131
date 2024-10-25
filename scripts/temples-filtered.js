@@ -85,11 +85,11 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guayaquil-ecuador/400x250/guayaquil-ecuador-temple-lds-884500-wallpaper.jpg"
   },
   {
-    templeName: "Guayaquil Ecuador",
-    location: "Guayaquil, Ecuador",
-    dedicated: "1999, August, 1-2",
-    area: 45000,
+    templeName: "Adelaide Australia",
+    location: "Adelaide, Australia",
+    dedicated: "2000, June, 15",
+    area: 10700,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guayaquil-ecuador/400x250/guayaquil-ecuador-temple-lds-884500-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x250/adelaide-australia-temple-lds-856093-wallpaper.jpg"
   },
 ];
