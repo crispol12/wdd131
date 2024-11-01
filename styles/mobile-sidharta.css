@@ -5,6 +5,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
 
 header {
@@ -88,6 +89,20 @@ img {
     object-fit: cover;
 }
 
+/* Imagen principal a pantalla completa */
+.main-banner img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+.main-banner h3 {
+    padding: 20px; /* Agrega espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el texto */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #1a2a6c; /* Color de texto */
+}
+
 /* Estilo para las imágenes y texto de la descripción en móviles */
 .description {
     padding: 20px;
@@ -108,18 +123,39 @@ img {
     font-size: 1rem;
     padding: 0 10px;
 }
+.about-us {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 40px 20px; /* Espacio alrededor del contenido */
+    text-align: center;
+    color: #1a2a6c; /* Color de texto principal */
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1a2a6c; /* Color del título */
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* Centrado y espaciado entre párrafos */
+}
 
 footer {
-    background-color: #1a2a6c;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 10px;
 }
 
-/* Media Query para ocultar el menú de hamburguesa en pantallas grandes */
+/* Media Query para pantallas grandes */
 @media (min-width: 769px) {
     .hamburger-menu {
-        display: none;
+        display: none; /* Oculta el menú de hamburguesa en pantallas grandes */
     }
 
     nav#nav-links {
@@ -148,12 +184,16 @@ footer {
         padding: 8px 15px;
         border-radius: 4px;
         white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-    }
+    }  
+    @media (max-width: 768px) {
+        .description {
+            grid-template-columns: 1fr; /* Cambia a una sola columna */
+        }
+    
+        .description figure,
+        .description-text {
+            grid-column: 1; /* Todos ocupan la misma columna */
+        }
+    }  
 }
 
-/* Imagen principal a pantalla completa */
-.main-banner img {
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
-}

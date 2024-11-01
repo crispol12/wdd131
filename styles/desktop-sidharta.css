@@ -5,6 +5,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
 
 header {
@@ -24,9 +25,9 @@ h1 {
 /* Navegación para pantallas grandes */
 nav#nav-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Alinea los elementos de navegación a la derecha */
     align-items: center;
-    width: 100%;
+    gap: 15px; /* Espacio entre los botones */
 }
 
 nav#nav-links ul {
@@ -35,11 +36,6 @@ nav#nav-links ul {
     gap: 15px;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-}
-
-nav#nav-links li {
-    margin: 0;
 }
 
 nav#nav-links a {
@@ -47,19 +43,34 @@ nav#nav-links a {
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
-    background-color: #ffcc33;
+   
     border-radius: 4px;
     transition: background-color 0.3s;
     white-space: nowrap; /* Evita que el texto se rompa */
 }
 
 nav#nav-links a:hover {
-    background-color: #ff9933;
+    background-color: #141413; /* Color de fondo en hover */
 }
 
 /* Menú de hamburguesa oculto en pantallas grandes */
 .hamburger-menu {
-    display: none;
+    display: none; /* Oculto en pantallas grandes */
+}
+
+/* Imagen principal a pantalla completa */
+.main-banner img {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: auto;
+    object-fit: cover;
+    margin: 0; /* Elimina cualquier margen adicional */
+}
+.main-banner h3 {
+    padding: 20px; /* Agrega espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el texto */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #1a2a6c; /* Color de texto */
 }
 
 /* Sección de descripción para pantallas grandes */
@@ -67,28 +78,74 @@ nav#nav-links a:hover {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: imagen, texto, imagen */
     gap: 20px;
-    align-items: center;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-items: center; /* Alinea horizontalmente al centro */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-.description img {
+/* Configurar las imágenes a cada lado en pantallas grandes */
+.description figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
 }
 
-/* Estilo del texto centrado */
+.description figure:nth-of-type(1) {
+    grid-column: 1; /* Coloca la primera imagen en la primera columna (izquierda) */
+}
+
+.description figure:nth-of-type(2) {
+    grid-column: 3; /* Coloca la segunda imagen en la tercera columna (derecha) */
+}
+
+/* Texto en la columna central */
 .description-text {
+    grid-column: 2; /* Ocupa la columna central */
     font-size: 1.2rem;
     line-height: 1.5;
     color: #333;
     padding: 0 20px;
-    grid-column: 2; /* Coloca el texto en la segunda columna */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+/* Estilos para las imágenes y sus captions */
+figure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    max-width: 300px; /* Limita el ancho al de la imagen */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.about-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #1a2a6c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    max-width: 700px; /* Ancho máximo para el cuadro */
+    font-size: 1rem;
+}
+
+/* Footer */
 footer {
     background-color: #1a2a6c;
     color: #ffffff;
