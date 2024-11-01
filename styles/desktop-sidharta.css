@@ -24,12 +24,22 @@ h1 {
 /* Navegación para pantallas grandes */
 nav#nav-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 nav#nav-links ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+}
+
+nav#nav-links li {
+    margin: 0;
 }
 
 nav#nav-links a {
@@ -39,6 +49,12 @@ nav#nav-links a {
     padding: 8px 15px;
     background-color: #ffcc33;
     border-radius: 4px;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+nav#nav-links a:hover {
+    background-color: #ff9933;
 }
 
 /* Menú de hamburguesa oculto en pantallas grandes */
@@ -46,26 +62,31 @@ nav#nav-links a {
     display: none;
 }
 
-/* Banner principal y descripción */
-.main-banner, .description {
+/* Sección de descripción para pantallas grandes */
+.description {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: imagen, texto, imagen */
+    gap: 20px;
+    align-items: center;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+.description img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
-.description img {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
+/* Estilo del texto centrado */
+.description-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    padding: 0 20px;
+    grid-column: 2; /* Coloca el texto en la segunda columna */
 }
 
 footer {
@@ -73,6 +94,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 /* Media Query para pantallas muy grandes (mínimo 1440px) */

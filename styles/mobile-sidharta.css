@@ -54,6 +54,7 @@ nav#nav-links {
 nav#nav-links ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav#nav-links li {
@@ -86,6 +87,28 @@ img {
     height: auto;
     object-fit: cover;
 }
+
+/* Estilo para las imágenes y texto de la descripción en móviles */
+.description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
 footer {
     background-color: #1a2a6c;
     color: #ffffff;
@@ -101,16 +124,18 @@ footer {
 
     nav#nav-links {
         display: flex;
+        justify-content: center;
+        align-items: center;
         position: static;
         background-color: transparent;
-        width: auto;
-        text-align: right;
+        width: 100%;
     }
 
     nav#nav-links ul {
         display: flex;
         gap: 15px;
         justify-content: center;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
     }
 
     nav#nav-links li {
@@ -122,5 +147,13 @@ footer {
         background-color: #ffcc33;
         padding: 8px 15px;
         border-radius: 4px;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
     }
+}
+
+/* Imagen principal a pantalla completa */
+.main-banner img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
 }
