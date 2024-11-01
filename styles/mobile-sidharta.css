@@ -86,6 +86,12 @@ img {
     height: auto;
     object-fit: cover;
 }
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
 
 /* Media Query para ocultar el menú de hamburguesa en pantallas grandes */
 @media (min-width: 769px) {
