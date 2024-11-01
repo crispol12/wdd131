@@ -1,34 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singing Services - Sidharta Academia de Canto</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Singing Services - Sidharta Singing School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/services-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/services-desktop.css" media="(min-width: 769px)">
 </head>
 <body>
     <header>
-        <h1>Sidharta Academia de Canto</h1>
-        <nav>
+        <h1>Singing Services - Sidharta Singing School</h1>
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation for mobile and large screens -->
+        <nav id="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="home-sidharta.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services-singing.html">Singing Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html">Singing Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Singing Services</h2>
-            <p>Offering beginner to advanced singing lessons, vocal techniques, and performance coaching tailored to your needs.</p>
+        <!-- Main banner with image -->
+        <section class="main-banner">
+            <img src="images/play_guitar.jpg" alt="Singing Coaching">
+            <h3>Unleash Your Voice with Our Singing Services</h3>
+        </section>
+
+        <!-- Description of services -->
+        <section class="services">
+            <h2>Our Singing Services</h2>
+
+            <!-- Singing Coaching service -->
+            <div class="service">
+                <h3>Singing Coaching</h3>
+                <p>Receive personalized guidance to improve your vocal technique and take your singing to the next level. Our coaching is tailored to your individual needs and goals.</p>
+            </div>
+
+            <!-- Group Classes service -->
+            <div class="service">
+                <h3>Group Classes</h3>
+                <p>Join group classes where you can learn in a dynamic and collaborative environment. Improve your technique while sharing with other students.</p>
+            </div>
+
+            <!-- Choir service -->
+            <div class="service">
+                <h3>Choir</h3>
+                <p>Join our choir and experience the power of singing in harmony with others. Ideal for those who seek a group singing experience.</p>
+            </div>
+
+            <!-- Additional image with description -->
+            <figure>
+                <img src="images/band.jpg" alt="Group Singing Class">
+                <figcaption>Band, the best opcion by practice singing.</figcaption>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sidharta Academia de Canto | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; <span id="currentyear"></span> Sidharta - Otavalo/Ecuador</p>
+        <p id="lastModified">Last Modification:</p>
     </footer>
+
+    <script src="scripts/sidharta.js"></script>
 </body>
 </html>

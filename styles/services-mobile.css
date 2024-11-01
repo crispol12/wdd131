@@ -1,0 +1,144 @@
+/* General Body Style */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Title */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Navigation */
+nav#nav-links {
+    display: none;
+    background-color: #ffffff;
+    color: #1a2a6c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav#nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav#nav-links a {
+    text-decoration: none;
+    color: #1a2a6c;
+    font-weight: bold;
+}
+main {
+    flex: 1;
+}
+/* Main Banner */
+.main-banner img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-banner h3 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    border-radius: 8px;
+    color: #1a2a6c;
+}
+
+/* Service Description Section */
+.description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    color: #1a2a6c;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

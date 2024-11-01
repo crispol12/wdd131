@@ -1,0 +1,153 @@
+/* General Body Style */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+}
+
+/* Main */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible entre header y footer */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a2a6c;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Navigation for Large Screens */
+nav#nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+nav#nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav#nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: #ffcc33;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav#nav-links a:hover {
+    background-color: #141413;
+}
+
+/* Hide Hamburger Menu in Large Screens */
+.hamburger-menu {
+    display: none;
+}
+
+/* Main Banner for Full Screen */
+.main-banner img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-banner h3 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    border-radius: 8px;
+    color: #1a2a6c;
+}
+
+/* Service Description for Large Screens */
+.description {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Align images on sides */
+.description figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description figure:nth-of-type(1) {
+    grid-column: 1;
+}
+
+.description figure:nth-of-type(2) {
+    grid-column: 3;
+}
+
+/* Center Text Column */
+.description-text {
+    grid-column: 2;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #1a2a6c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior cuando el contenido es insuficiente */
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 1440px) {
+    .main-banner, .description {
+        max-width: 1600px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
