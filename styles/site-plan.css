@@ -16,9 +16,13 @@ header, footer {
 }
 
 /* Estilos para encabezados */
-h1, h2 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     color: #ffcc33;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4b4b4b;  /* Un gris oscuro */
 }
 
 /* Estilo de secciones */
