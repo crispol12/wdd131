@@ -1,0 +1,87 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a2a6c;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Navegación para pantallas grandes */
+nav#nav-links {
+    display: flex;
+}
+
+nav#nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav#nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: #ffcc33;
+    border-radius: 4px;
+}
+
+/* Menú de hamburguesa oculto en pantallas grandes */
+.hamburger-menu {
+    display: none;
+}
+
+/* Banner principal y descripción */
+.main-banner, .description {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.description img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query para pantallas muy grandes (mínimo 1440px) */
+@media (min-width: 1440px) {
+    .main-banner, .description {
+        max-width: 1600px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

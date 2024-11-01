@@ -1,0 +1,120 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Título */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Menú de hamburguesa */
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Navegación para móviles */
+nav#nav-links {
+    display: none;
+    background-color: #ffffff;
+    color: #1a2a6c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav#nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav#nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav#nav-links a {
+    text-decoration: none;
+    color: #1a2a6c;
+    font-weight: bold;
+}
+
+/* Estilo para el ícono "X" */
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Query para ocultar el menú de hamburguesa en pantallas grandes */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav#nav-links {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        text-align: right;
+    }
+
+    nav#nav-links ul {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    nav#nav-links li {
+        border: none;
+    }
+
+    nav#nav-links a {
+        color: #ffffff;
+        background-color: #ffcc33;
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+}
