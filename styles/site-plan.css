@@ -39,12 +39,13 @@ li {
     margin: 10px 0;
 }
 
-/* Estilo para imágenes dentro de figure */
+/* Centra las figuras y las imágenes */
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 0 auto; /* Centra el contenedor figure */
+    padding: 10px 0;
 }
 
 img {
@@ -58,7 +59,7 @@ figcaption {
     font-size: 0.9em;
     color: #333;
     margin-top: 8px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Tamaño de fuente en el pie de página */
