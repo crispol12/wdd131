@@ -3,36 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Sidharta Academia de Canto</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Sidharta Singing School - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mobile-sidharta.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/desktop-sidharta.css" media="(min-width: 769px)">
 </head>
 <body>
     <header>
-        <h1>Sidharta Academia de Canto</h1>
-        <nav>
+        <h1>Sidharta Singing School</h1>
+        
+        <!-- Menú de hamburguesa para móviles -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navegación para móviles y pantallas grandes -->
+        <nav id="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="home-sidharta.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services-singing.html">Singing Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html">Singing Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="images/gallery1.jpg" alt="Gallery Image 1" loading="lazy">
-                <img src="images/gallery2.jpg" alt="Gallery Image 2" loading="lazy">
-                <!-- More images -->
+        <section class="main-banner">
+            <img data-src="images/sidharta_page_home.jpg" alt="Singing Photo" class="main-image">
+            <h3>Singing awakens the music within you and lifts you closer to the truth, come and sing with Sidharta.</h3>
+        </section>
+        
+        <section class="description">
+            <div class="intro-text">
+                <h2>Sidharta, a place where you will find your talent, near you in Otavalo-Ecuador.</h2>
+                <p>The Sidharta singing school is the result of a life of singing. Its owner, Christian Castillo, has been singing since he was 6 years old. At 37, he is now in a stage of maturity that allows him to share his experience with people who wish to reach their full potential in singing.</p>
             </div>
+
+            <!-- Sección de galería de fotos -->
+            <section class="photo-gallery">
+                <h2>Gallery</h2>
+                <div class="photo-section">
+                    <figure>
+                        <img data-src="images/photo1.jpg" alt="Singing lesson in progress">
+                        <figcaption>A memorable singing lesson at Sidharta School.</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img data-src="images/photo2.jpg" alt="Student performing at an event">
+                        <figcaption>A student performing confidently on stage.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-src="images/photo3.jpg" alt="Group singing practice session">
+                        <figcaption>Group practice session at Sidharta Singing School.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img data-src="images/photo4.jpg" alt="Christian Castillo teaching a class">
+                        <figcaption>Christian Castillo sharing his expertise in a class.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+
+        <section id="about-us" class="about-us">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Sidharta Singing School! We are dedicated to helping individuals unlock their full potential in singing. Founded by Christian Castillo, who has over 30 years of singing experience, our school offers a nurturing environment where passion for music and voice meets professional training.
+            </p>
+            <p>
+                Our mission is to guide our students in finding their unique voices and to inspire them to achieve their musical dreams. Located in Otavalo, Ecuador, we are excited to welcome aspiring singers from all backgrounds.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sidharta Academia de Canto | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; <span id="currentyear"></span> sidharta - Otavalo/Ecuador</p>
+        <p id="lastModified">Last Modification:</p>
     </footer>
+
+    <script src="scripts/gallery.js"></script>
 </body>
 </html>
