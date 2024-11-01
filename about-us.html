@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidharta Singing School - Home</title>
+    <title>About Us - Sidharta Singing School</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/mobile-sidharta.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="styles/desktop-sidharta.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/about-us-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/about-us-desktop.css" media="(min-width: 769px)">
 </head>
 <body>
     <header>
-        <h1>Sidharta Singing School</h1>
-        
+        <h1>About Sidharta Singing School</h1>
         <!-- Menú de hamburguesa para móviles -->
         <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -31,46 +30,34 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
+        <!-- Banner principal con imagen -->
         <section class="main-banner">
-            <img data-src="images/about_us.jpg" alt="Singing Photo" class="main-image">
+            <img data-src="images/about_us.jpg" alt="Sidharta Singing School">
             <h3>Sidharta is magic.</h3>
         </section>
-        
-        <section class="description">
-            <!-- Texto introductorio al principio -->
-            <div class="intro-text">
-                <h2>About Us</h2>
-                <p></p>
-            </div>
 
-            <!-- Sección de fotos con descripción -->
-            <div class="photo-section">
-                <figure>
-                    <img data-src="images/My_photo.jpg" alt="Christian Castillo, the founder of Sidharta singing school, smiling and welcoming students">
-                    <figcaption>Christian Castillo, founder of Sidharta singing school, sharing his passion for music.</figcaption>
-                </figure>
-                
-                <figure>
-                    <img data-src="images/sidharta_description.jpg" alt="Sidharta school entrance with a welcoming atmosphere">
-                    <figcaption>Entrance to Sidharta school, a welcoming place for aspiring singers.</figcaption>
-                </figure>
-            </div>
+        <!-- Descripción del About Us -->
+        <section class="about-us">
+            <h2>Welcome to Sidharta Singing School</h2>
+            <p>We are dedicated to helping individuals unlock their full potential in singing. Founded by Christian Castillo, who has over 30 years of singing experience, our school offers a nurturing environment where passion for music and voice meets professional training.</p>
+            <p>Sidharta is a school made for anyone who wants to improve their vocal technique or simply wants to learn singing to relax. Come and share with us, life is too short to do things you don't like. Enjoy the greatest expression of truth within you, your singing.</p>
         </section>
-        <section id="about-us" class="about-us">
-            <h2>About Us</h2>
-            <p> Welcome to Sidharta Singing School! We are dedicated to helping individuals unlock their full potential in singing. Founded by Christian Castillo, who has over 30 years of singing experience, our school offers a nurturing environment where passion for music and voice meets professional training.
-            </p>
-            <p>Sidharta is a school made for anyone who wants to improve their vocal technique or simply wants to learn singing to relax.
-               The best way to be happy is doing what you want, come and share with us, life is too short to do things you don't like, come and enjoy the greatest expression of truth within you, your singing.
-            </p>
+
+        <!-- Imagen adicional con descripción -->
+        <section class="additional-image">
+            <figure>
+                <img data-src="images/sidharta_description.jpg" alt="Sidharta school entrance">
+                <figcaption>Entrance to Sidharta school, a welcoming place for aspiring singers.</figcaption>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> sidharta - Otavalo/Ecuador</p>
+        <p>&copy; <span id="currentyear"></span> Sidharta - Otavalo/Ecuador</p>
         <p id="lastModified">Last Modification:</p>
     </footer>
 

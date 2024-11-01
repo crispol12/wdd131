@@ -1,0 +1,142 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a2a6c;
+    padding: 20px 40px;
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav#nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav#nav-links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav#nav-links a:hover {
+    background-color: #151414;
+}
+
+/* Oculta el menú de hamburguesa en pantallas grandes */
+.hamburger-menu {
+    display: none;
+}
+
+/* Banner principal */
+.main-banner {
+    position: relative;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Imagen en el banner */
+.main-banner img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    min-height: 100vh; /* Asegura que la altura cubra toda la pantalla */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+}
+
+/* Estilo para el texto en el banner */
+.main-banner h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+/* Sección About Us */
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.4rem;
+    color: #1a2a6c;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Imagen adicional */
+.additional-image {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.additional-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.additional-image figcaption {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 30px;
+}
