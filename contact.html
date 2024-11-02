@@ -3,43 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Sidharta Academia de Canto</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact - Sidharta Singing School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/contact-desktop.css" media="(min-width: 769px)">
 </head>
 <body>
     <header>
-        <h1>Sidharta Academia de Canto</h1>
-        <nav>
+        <h1>Contact Us </h1>
+        
+        <!-- Menú de hamburguesa para móviles -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navegación para móviles y pantallas grandes -->
+        <nav id="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="home-sidharta.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services-singing.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html">Singing Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Whether you’re interested in learning more about our classes or have questions, feel free to reach out.</p>
+            <p>Email: <a href="mailto:info@sidhartasinging.com">info@sidhartasinging.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Location: Otavalo, Ecuador</p>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
+
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Submit</button>
+
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sidharta Academia de Canto | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; <span id="currentyear"></span> Sidharta - Otavalo/Ecuador</p>
+        <p id="lastModified">Last Modification:</p>
     </footer>
+
+    <script src="scripts/sidharta.js"></script>
 </body>
 </html>

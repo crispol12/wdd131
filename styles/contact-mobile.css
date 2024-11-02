@@ -1,0 +1,144 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Título */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Menú de hamburguesa */
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Navegación para móviles */
+nav#nav-links {
+    display: none;
+    background-color: #1a2a6c;
+    color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav#nav-links.show-menu {
+    display: block;
+}
+
+nav#nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav#nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+}
+
+/* Sección de información de contacto */
+.contact-info {
+    padding: 20px;
+    text-align: center;
+    color: #1a2a6c;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #1a2a6c;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0d1e48;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
