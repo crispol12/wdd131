@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidharta Singing School - Home</title>
+    <title>Sidharta Singing School - Gallery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/mobile-sidharta.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="styles/desktop-sidharta.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/gallery-mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/gallery-desktop.css" media="(min-width: 769px)">
 </head>
 <body>
     <header>
@@ -35,37 +35,19 @@
 
     <main>
         <section class="photo-gallery">
-                <h2>Gallery</h2>
-                <div class="photo-section">
-                    <figure>
-                        <img data-src="images/photo1.jpg" alt="Singing lesson in progress">
-                        <figcaption>A memorable singing lesson at Sidharta School.</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img data-src="images/photo2.jpg" alt="Student performing at an event">
-                        <figcaption>A student performing confidently on stage.</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img data-src="images/photo3.jpg" alt="Group singing practice session">
-                        <figcaption>Group practice session at Sidharta Singing School.</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img data-src="images/photo4.jpg" alt="Christian Castillo teaching a class">
-                        <figcaption>Christian Castillo sharing his expertise in a class.</figcaption>
-                    </figure>
-                </div>
-
+            <h2>Gallery</h2>
+            <div class="photo-section" id="photo-section">
+                <!-- Las fotos se cargarán dinámicamente aquí -->
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> sidharta - Otavalo/Ecuador</p>
+        <p>&copy; <span id="currentyear"></span> Sidharta - Otavalo/Ecuador</p>
         <p id="lastModified">Last Modification:</p>
     </footer>
 
+    <!-- Enlace correcto al archivo JavaScript -->
     <script src="scripts/gallery.js"></script>
 </body>
 </html>

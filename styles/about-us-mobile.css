@@ -40,14 +40,20 @@ header h1 {
 
 /* Navegación para móviles */
 nav#nav-links {
-    display: none; /* Oculto inicialmente */
-    background-color: #ffffff;
+    display: none; /* Oculto por defecto en móviles */
+    background-color: #1a2a6c; /* Color de fondo azul oscuro */
+    color: #ffffff;
     position: absolute;
     top: 60px;
     right: 0;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Asegura que el menú esté sobre otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de sobreposición */
+}
+
+nav#nav-links.show-menu {
+    display: block; /* Muestra el menú al activar esta clase */
 }
 
 nav#nav-links ul {
@@ -57,17 +63,16 @@ nav#nav-links ul {
 }
 
 nav#nav-links li {
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
 nav#nav-links a {
     text-decoration: none;
-    color: #1a2a6c;
+    color: #ffffff; /* Color de texto blanco */
     font-weight: bold;
     display: block;
-    padding: 10px;
 }
-
 /* Estilos para cambiar el icono del menú a una X al abrir */
 .hamburger-menu.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);

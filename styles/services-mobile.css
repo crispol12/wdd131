@@ -32,26 +32,36 @@ h1 {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 30px; /* Ajustado: Mueve el menú hamburguesa un poco hacia la izquierda */
+    padding: 5px; /* Añadido: Espaciado adicional alrededor del icono */
+    border-radius: 5px; /* Añadido: Bordes redondeados para un mejor diseño */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente para hacer que el icono se destaque */
 }
 
 .hamburger-menu .bar {
     height: 4px;
     background-color: #ffffff;
-    margin: 6px 0;
+    margin: 5px 0; /* Ajuste del margen entre las barras */
     transition: 0.4s;
+    border-radius: 2px; /* Redondeo de las barras */
 }
 
 /* Mobile Navigation */
 nav#nav-links {
-    display: none;
-    background-color: #ffffff;
-    color: #1a2a6c;
+    display: none; /* Oculto por defecto en móviles */
+    background-color: #1a2a6c; /* Color de fondo azul oscuro */
+    color: #ffffff;
     position: absolute;
     top: 60px;
     right: 0;
     width: 100%;
     text-align: center;
+    z-index: 10; /* Asegura que el menú esté sobre otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de sobreposición */
+}
+
+nav#nav-links.show-menu {
+    display: block; /* Muestra el menú al activar esta clase */
 }
 
 nav#nav-links ul {
@@ -67,15 +77,22 @@ nav#nav-links li {
 
 nav#nav-links a {
     text-decoration: none;
-    color: #1a2a6c;
+    color: #ffffff; /* Color de texto blanco */
     font-weight: bold;
+    display: block;
 }
 
 main {
     flex: 1;
 }
 
-/* Main Banner */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Imagen principal a pantalla completa */
 .main-banner img {
     width: 100vw;
     height: auto;
@@ -83,13 +100,30 @@ main {
 }
 
 .main-banner h3 {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    border-radius: 8px;
-    color: #1a2a6c;
-    font-size: 1.2em;
+    padding: 20px; /* Agrega espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el texto */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #1a2a6c; /* Color de texto */
 }
+nav#nav-links li {
+        border: none;
+    }
+
+    nav#nav-links a {
+        color: #ffffff;
+       
+        padding: 8px 15px;
+        border-radius: 4px;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    nav#nav-links a:hover {
+        background-color: #090909; /* Color de fondo en hover */
+    }
 
 /* Service Section */
 .services {
@@ -124,4 +158,70 @@ figcaption {
     font-size: 0.9em;
     text-align: center;
     padding-top: 5px;
+}
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+    /* Contenido Principal */
+    main {
+        flex: 1;
+        max-width: 1200px; /* Limita el ancho del contenido principal */
+        margin: 0 auto;
+    }
+
+    /* Imagen en el Banner Principal */
+    .main-banner img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Oculta el Menú de Hamburguesa */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Menú de Navegación en Pantallas Grandes */
+    nav#nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 100%;
+        padding: 0 20px; /* Margen lateral para que no toque los bordes */
+    }
+
+    nav#nav-links ul {
+        display: flex;
+        gap: 20px; /* Espacio entre los elementos de navegación */
+        justify-content: center;
+        flex-wrap: nowrap; /* Asegura que los elementos se mantengan en una línea */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Ajustes para Pantallas Móviles (máximo de 768px) */
+@media (max-width: 768px) {
+    /* Descripción en Columnas */
+    .description {
+        display: grid;
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 15px;
+    }
+
+    .description figure,
+    .description-text {
+        grid-column: 1; /* Todos ocupan la misma columna */
+    }
+
+    /* Menú de Navegación */
+    
+    /* Menú de Hamburguesa */
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }

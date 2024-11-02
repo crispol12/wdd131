@@ -1,0 +1,205 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a6c;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+header {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Título */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+/* Menú de hamburguesa */
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Navegación para móviles */
+nav#nav-links {
+    display: none; /* Oculto por defecto en móviles */
+    background-color: #1a2a6c; /* Color de fondo azul oscuro */
+    color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Asegura que el menú esté sobre otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de sobreposición */
+}
+
+nav#nav-links.show-menu {
+    display: block; /* Muestra el menú al activar esta clase */
+}
+
+nav#nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav#nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto blanco */
+    font-weight: bold;
+    display: block;
+}
+/* Estilo para el ícono "X" */
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+/* Estilo para cada imagen en la galería */
+.gallery .gallery-item {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Imagen dentro de cada elemento de la galería */
+.gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Imagen principal a pantalla completa */
+.main-banner img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+.main-banner h3 {
+    padding: 20px; /* Agrega espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el texto */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #1a2a6c; /* Color de texto */
+}
+
+
+
+footer {
+    background-color: #1a2a6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none; /* Oculta el menú de hamburguesa en pantallas grandes */
+    }
+
+    nav#nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    nav#nav-links ul {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    }
+
+    nav#nav-links li {
+        border: none;
+    }
+
+    nav#nav-links a {
+        color: #ffffff;
+        background-color: #ffcc33;
+        padding: 8px 15px;
+        border-radius: 4px;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    }  
+    @media (max-width: 768px) {
+        .description {
+            grid-template-columns: 1fr; /* Cambia a una sola columna */
+        }
+    
+        .description figure,
+        .description-text {
+            grid-column: 1; /* Todos ocupan la misma columna */
+        }
+    } 
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+        }
+    }
+    
+    /* Media Query para pantallas grandes (escritorio) */
+    @media (min-width: 1025px) {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+        }
+    }
+    
+    /* Media Query para pantallas extra grandes */
+@media (min-width: 1440px) {
+        .gallery {
+            grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas extra grandes */
+        }
+} 
+
+}
